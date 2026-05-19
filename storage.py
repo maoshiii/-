@@ -48,6 +48,6 @@ def delete_book(author: str, title: str) -> bool:
     books = [b for b in books if not (b.author.lower() == author.strip().lower() and b.title.lower() == title.strip().lower())]
     
     if len(books) < initial_count:
-        save_books(books)
+        save_books(books) 
         return True
-    return False
+    return False 
